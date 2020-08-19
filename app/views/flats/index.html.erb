@@ -1,13 +1,32 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to "#", class: "navbar-brand" do %>
+    <%= image_tag "https://cdn.worldvectorlogo.com/logos/airbnb-2.svg" %>
+  <% end %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">🏡Flats</a>
+      </li>
+      <li class="nav-item nav-link">
+        <%= link_to "🚀Add", new_flat_path%>
+      </li>
+    </ul>
+  </div>
+</div>
 
 <div class="container mt-3">
   <div class="header">
-    <h1>Flats</h1>
+    <h1>FLATS</h1>
   </div>
   <div class="row">
 
     <% @flats.each do |flat| %>
-      <div class="col-4">
+      <div class="col-3">
         <div class="flat-card">
           <img class="flat-card-image" src=<%= flat.URL %>/>
           <div class="card-info">
@@ -23,9 +42,9 @@
             </div>
           </div>
           <div class="flat-card-links">
-            <span><%= link_to "🚀Add", new_flat_path %> |
-              <%= link_to "💀Remove", new_flat_path %> |
-              <%= link_to "👨‍🎨Edit", new_flat_path %>
+            <span><%= link_to "🏡Details", flat_path(flat) %> |
+              <%= link_to "💀Remove", flat_path(flat) %> |
+              <%= link_to "👨‍🎨Edit", edit_flat_path(flat) %>
             </span>
           </div>
         </div>

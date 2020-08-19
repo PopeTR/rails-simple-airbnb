@@ -2,10 +2,29 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
+.navbar-lewagon {
+  justify-content: space-between;
+  background: white;
+  width: 100%;
+}
 
-.col-4 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0px;
+}
+
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-bottom: 20px;
 }
 
 .row {
@@ -49,8 +68,14 @@ a {
   font-size: 15px;
 }
 
+h1 {
+  text-align: center;
+}
+
 .header {
   align-content: center;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .card-info-details {
