@@ -1,0 +1,55 @@
+// Import your components CSS files here.
+@import "alert";
+@import "avatar";
+@import "navbar";
+
+.col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.flat-card-image {
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+}
+
+.flat-card {
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.flex {
+  flex-direction: column;
+  display: flex;
+}
+
+.card-info {
+    padding: 24px;
+    background-color: #F8F9FA;
+}
+
+.card-info-details {
+  padding: 16px;
+  margin: 2px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.card-info-details p, i {
+  margin: 5px;
+  }
